@@ -1,7 +1,8 @@
 {
   "pages": [
+    "pages/jihuo/jihuo",
     "pages/register/register",
-    "pages/index/index"
+    "pages/loginfaild/loginfaild"
   ],
   "window": {
     "backgroundTextStyle": "light",

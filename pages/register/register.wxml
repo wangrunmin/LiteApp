@@ -1,16 +1,17 @@
 <form bindsubmit="formSubmit" bindreset="formReset">
+  <input class="hidden" name="id" value="{{userInfo.id}}" />
   <view class="section">
     <view class="panel-first">
       <text class="left">姓名</text>
-      <input type="text" placeholder="姓名" name="xingming"/>
+      <input type="text" placeholder="姓名" name="xingming" />
     </view>
     <view class="panel">
       <text class="left">手机号</text>
-      <input type="number" placeholder="手机号" name="shoujihao"/>
+      <input type="number" placeholder="手机号" name="shoujih" />
     </view>
     <view class="panel">
       <text class="left">工种</text>
-      <input type="text" placeholder="工种" name="gongzhong"/>
+      <input type="text" placeholder="工种" name="gongzhong" />
     </view>
   </view>
   <view class="btn-area">

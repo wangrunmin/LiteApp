@@ -27,3 +27,6 @@
 input {
   height: 3rem;
 }
+.hidden{
+  visibility: hidden;
+}
