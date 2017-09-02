@@ -3,19 +3,18 @@
   <view class="section">
     <view class="panel-first">
       <text class="left">姓名</text>
-      <input type="text" placeholder="姓名" name="xingming" />
+      <input type="text" placeholder="姓名" name="xingming" value="{{userInfo.xingming}}" />
     </view>
     <view class="panel">
       <text class="left">手机号</text>
-      <input type="number" placeholder="手机号" name="shoujih" />
+      <input type="number" placeholder="手机号" name="shoujih" value="{{userInfo.shoujih}}"  />
     </view>
     <view class="panel">
       <text class="left">工种</text>
-      <input type="text" placeholder="工种" name="gongzhong" />
+      <input type="text" placeholder="工种" name="gongzhong" value="{{userInfo.gongzhong}}"  />
     </view>
   </view>
   <view class="btn-area">
-    <button formType="submit">Submit</button>
-    <button formType="reset">Reset</button>
+    <button type="primary" formType="submit">Submit</button>
   </view>
 </form>

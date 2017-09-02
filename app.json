@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/jihuo/jihuo",
-    "pages/register/register",
+    "pages/load/load",
+    "pages/write/write",
+    "pages/read/read",
+    "pages/user/user",
     "pages/loginfaild/loginfaild"
   ],
   "window": {
@@ -9,5 +11,22 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/read/read",
+        "text": "查账"
+      },
+      {
+        "pagePath": "pages/write/write",
+        "text": "记账"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人"
+      }
+    ]
   }
 }

@@ -1,0 +1,35 @@
+<!--jihuo.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="hidden">
+    <input type="hidden" name="userid" value="{{userInfo.id}}"/>
+    </view>
+    <view class="panel-first">
+      <text class="left">姓名</text>
+      <input type="text" value="{{userInfo.xingming}}" />
+    </view>
+    <view class="panel">
+      <text class="left">工种</text>
+      <input type="text" value="{{userInfo.gongzhong}}" />
+    </view>
+    <view class="panel">
+      <text class="left">日期</text>
+      <input type="text" placeholder="日期" name="date" value="{{date}}" />
+    </view>
+    <view class="panel">
+      <text class="left">流水号</text>
+      <input type="number" placeholder="流水号" name="liushuih" value="{{liushuih}}" />
+    </view>
+    <view class="panel">
+      <text class="left">尺码</text>
+      <input type="text" placeholder="尺码" name="chima" value="{{chima}}" />
+    </view>
+    <view class="panel">
+      <text class="left">实数</text>
+      <input type="text" placeholder="实数" name="shishu" value="{{shishu}}" />
+    </view>
+  </view>
+  <view class="btn-area">
+    <button type="primary" formType="submit">Submit</button>
+  </view>
+</form>
