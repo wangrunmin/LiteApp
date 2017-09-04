@@ -1,2 +1,2 @@
 <!--pages/loginfaild/loginfaild.wxml-->
-<text>pages/loginfaild/loginfaild.wxml</text>
+<text>小程序不可用，{{msg}}{{res}}</text>

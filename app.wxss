@@ -1,13 +1,29 @@
-/**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+.section {
+  width: 100%;
+  font-family: 'Microsoft YaHei';
+}
+
+.panel {
+  border-top: 1px solid #eee;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.left {
+  text-align: right;
+  width: 20%;
+  float: left;
+  padding-right: 20rpx;
+}
+
+input {
+  height: 3rem;
+}
 .hidden{
   visibility: hidden;
+}
+.warn{
+  display: block;
+  color: red;
+  text-align: center;
 }

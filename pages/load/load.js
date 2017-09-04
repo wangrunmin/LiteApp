@@ -8,7 +8,7 @@ Page({
       //接口调用失败
       fail: function (res) {
         wx.redirectTo({
-          url: '/pages/loginfaild/loginfaild?msg=' + "微信接口调用失败&res=" + res,
+          url: '/pages/loginfaild/loginfaild?msg=' + "微信接口调用失败&res=" + JSON.stringify(res),
         })
       },
       //接口调用成功，微信返回code，使用code获取openid
@@ -40,19 +40,19 @@ Page({
               }
               else {
                 wx.redirectTo({
-                  url: '/pages/loginfaild/loginfaild?msg=' + "服务器错误，可能是绑定微信OpenID失败&res=" + res.data,
+                  url: '/pages/loginfaild/loginfaild?msg=' + "服务器错误，可能是绑定微信OpenID失败&res=" + JSON.stringify(res.data),
                 })
               }
             },
             fail: function (res) {
               wx.redirectTo({
-                url: '/pages/loginfaild/loginfaild?msg=' + "服务器无法访问&res=" + res,
+                url: '/pages/loginfaild/loginfaild?msg=' + "服务器无法访问&res=" + JSON.stringify(res),
               })
             }
           })
         } else {
           wx.redirectTo({
-            url: '/pages/loginfaild/loginfaild?msg=' + "获取微信登录态失败&res=" + res.errMsg,
+            url: '/pages/loginfaild/loginfaild?msg=' + "获取微信登录态失败&res=" + JSON.stringify(res.errMsg),
           })
         }
       }

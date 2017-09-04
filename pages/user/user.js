@@ -1,13 +1,19 @@
-var app=getApp();
+var app = getApp();
 Page({
   data: {
-    userInfo: {}
+    userInfo: {},
+    NameisNullOrEmpty: false
   },
   onShow: function () {
+    var name = app.globalData.user.xingming;
+    var nameisempty = false;
+    if (name == null || name == '') {
+      nameisempty = true;
+    }
     this.setData({
-      userInfo:app.globalData.user
+      userInfo: app.globalData.user,
+      NameisNullOrEmpty:nameisempty
     })
-    console.log(this.data.userInfo);
   },
   formSubmit: function (e) {
     wx.request({
@@ -19,6 +25,9 @@ Page({
         wx.reLaunch({
           url: '/pages/load/load',
         })
+      },
+      fail: function (res) {
+
       }
     });
   }

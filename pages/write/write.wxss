@@ -4,40 +4,6 @@
   float: left;
 }
 
-.section {
-  width: 100%;
-  padding: 0 20rpx;
-  border: 1rpx solid #eee;
-  font-family: 'Microsoft YaHei';
-}
-
-.panel {
-  border-top: 1px solid #eee;
-  height: 3rem;
-  line-height: 3rem;
-}
-
-.panel-first {
-  border-top: 0px solid #000;
-  height: 3rem;
-  line-height: 3rem;
-}
-
-.left {
-  text-align: right;
-  width: 20%;
-  float: left;
-  padding-right: 20rpx;
-}
-
-input {
-  height: 3rem;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
 .btn-area {
   margin: 10rpx 0 0 0;
 }

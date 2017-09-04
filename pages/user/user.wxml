@@ -1,20 +1,40 @@
-<form bindsubmit="formSubmit" bindreset="formReset">
+<block wx:if="{{NameisNullOrEmpty}}">
+  <text class="warn">请绑定个人信息</text>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <input class="hidden" name="id" value="{{userInfo.id}}" />
+    <view class="section">
+      <view class="panel">
+        <text class="left">姓名</text>
+        <input type="text" placeholder="姓名" name="xingming" value="{{userInfo.xingming}}" />
+      </view>
+      <view class="panel">
+        <text class="left">手机号</text>
+        <input type="number" placeholder="手机号" name="shoujih" value="{{userInfo.shoujih}}" />
+      </view>
+      <view class="panel">
+        <text class="left">工种</text>
+        <input type="text" placeholder="工种" name="gongzhong" value="{{userInfo.gongzhong}}" />
+      </view>
+    </view>
+    <view class="btn-area">
+      <button type="primary" formType="submit">提交</button>
+    </view>
+  </form>
+</block>
+<block wx:else>
   <input class="hidden" name="id" value="{{userInfo.id}}" />
   <view class="section">
-    <view class="panel-first">
+    <view class="panel">
       <text class="left">姓名</text>
-      <input type="text" placeholder="姓名" name="xingming" value="{{userInfo.xingming}}" />
+      <text>{{userInfo.xingming}}</text>
     </view>
     <view class="panel">
       <text class="left">手机号</text>
-      <input type="number" placeholder="手机号" name="shoujih" value="{{userInfo.shoujih}}"  />
+      <text>{{userInfo.shoujih}}</text>
     </view>
     <view class="panel">
       <text class="left">工种</text>
-      <input type="text" placeholder="工种" name="gongzhong" value="{{userInfo.gongzhong}}"  />
+      <text>{{userInfo.gongzhong}}</text>
     </view>
   </view>
-  <view class="btn-area">
-    <button type="primary" formType="submit">Submit</button>
-  </view>
-</form>
+</block>
